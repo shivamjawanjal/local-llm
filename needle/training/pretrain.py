@@ -296,15 +296,15 @@ def pretrain(args):
     if is_main:
         decay_steps = max(1, int(total_steps * decay_ratio))
         stable_steps = total_steps - warmup_steps - decay_steps
-        print(f"\n  ─────────────────────────────────────")
+        print(f"\n  -------------------------------------")
         print(f"  Pretraining on PleIAs/SYNTH")
-        print(f"  ─────────────────────────────────────")
+        print(f"  -------------------------------------")
         print(f"  Parameters    {param_count:>12,}")
         print(f"  d_model       {config.d_model:>12}")
         print(f"  Heads         {config.num_heads:>7} ({config.num_kv_heads} KV)")
         print(f"  Layers        {config.num_encoder_layers:>7} enc / {config.num_decoder_layers} dec")
         print(f"  Dtype         {config.dtype:>12}")
-        print(f"  ─────────────────────────────────────")
+        print(f"  -------------------------------------")
         print(f"  Hosts         {num_hosts:>12}")
         print(f"  Devices       {num_devices:>5}/host, {total_devices} total")
         print(f"  Batch         {args.batch_size:>7} x {total_devices} = {global_batch_size}")
@@ -313,7 +313,7 @@ def pretrain(args):
         print(f"  Schedule      {warmup_steps}w / {stable_steps}s / {decay_steps}d (WSD)")
         print(f"  Est. steps    {estimated_steps:>12,}")
         print(f"  Save every    {save_every:>12,}")
-        print(f"  ─────────────────────────────────────\n")
+        print(f"  -------------------------------------\n")
 
     global_step = resume_step
 

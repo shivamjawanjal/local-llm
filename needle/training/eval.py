@@ -227,7 +227,7 @@ def benchmark_tool_calls(model, params, tokenizer, num_samples=200, max_gen_len=
             s = v.strip().lower()
             if s.startswith("at "):
                 s = s[3:].strip()
-            # "today at 21:00" → "21:00", "tonight" is harder but normalize what we can
+            # "today at 21:00" -> "21:00", "tonight" is harder but normalize what we can
             if s.startswith("today at "):
                 s = s[len("today at "):].strip()
             return s
@@ -388,7 +388,7 @@ def benchmark_tool_calls(model, params, tokenizer, num_samples=200, max_gen_len=
                 reasons.append(f"missing_tools:{','.join(sorted(ex_fn_names))}")
 
             if not ex_fp_names and not ex_fn_names and pred_name_set:
-                # Right tools but wrong args — find which values differ
+                # Right tools but wrong args -- find which values differ
                 for c in pred_calls:
                     if not isinstance(c, dict) or "name" not in c:
                         continue
@@ -556,7 +556,7 @@ def main(args):
         ppl = compute_perplexity_packed(model, params, val_data, args.batch_size)
         print(f"  perplexity: {ppl:.2f}  ({n_bins} packed bins)")
     except FileNotFoundError:
-        print("  Skipped — no pre-packed val data. Run 'needle tokenize' first.")
+        print("  Skipped -- no pre-packed val data. Run 'needle tokenize' first.")
         ppl = None
 
     # --- Tool-call accuracy with stratified sampling (matches training eval) ---
@@ -611,7 +611,7 @@ def main(args):
                 max_gen_len=args.max_gen_len, max_enc_len=args.max_enc_len,
                 constrained=use_constrained, ds=examples,
             )
-            print(f"  ─── {label} ({len(examples)} samples) ───")
+            print(f"  --- {label} ({len(examples)} samples) ---")
             print(f"  JSON parse       {tc['json_parse_rate']:>10.1%}")
             print(f"  Name F1          {tc['name_f1']:>10.1%}")
             print(f"  Param haluc      {tc['param_haluc']:>10.1%}")
@@ -628,7 +628,7 @@ def main(args):
                     print(f"    P: {pred}")
                     print()
             if tc.get("failures"):
-                print(f"  ─── Failures ({len(tc['failures'])} captured) ───")
+                print(f"  --- Failures ({len(tc['failures'])} captured) ---")
                 for j, fail in enumerate(tc["failures"][:15]):
                     print(f"  [{j+1}] Q: {fail['query'][:120]}")
                     print(f"      Ref:  {fail['ref'][:200]}")

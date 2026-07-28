@@ -137,7 +137,7 @@ def _make_val_loss_fn(apply_fn):
             src_mask=src_mask, tgt_mask=tgt_mask, cross_mask=cross_mask,
         )
         loss = optax.softmax_cross_entropy_with_integer_labels(logits.astype(jnp.float32), tgt_out)
-        # Val uses uniform weights for consistent PPL — just mask padding via seg_ids
+        # Val uses uniform weights for consistent PPL -- just mask padding via seg_ids
         padding_mask = (dec_seg_ids > 0).astype(jnp.float32)
         return jnp.sum(loss * padding_mask), jnp.sum(padding_mask)
     return val_loss_batch
@@ -301,13 +301,13 @@ def train(args):
 
     is_main = host_id == 0
     if is_main:
-        print(f"\n  ─────────────────────────────────────")
+        print(f"\n  -------------------------------------")
         print(f"  Parameters    {param_count:>12,}")
         print(f"  d_model       {config.d_model:>12}")
         print(f"  Heads         {config.num_heads:>7} ({config.num_kv_heads} KV)")
         print(f"  Layers        {config.num_encoder_layers:>7} enc / {config.num_decoder_layers} dec")
         print(f"  Dtype         {config.dtype:>12}")
-        print(f"  ─────────────────────────────────────")
+        print(f"  -------------------------------------")
         print(f"  Hosts         {num_hosts:>12}")
         print(f"  Devices       {num_devices:>5}/host, {total_devices} total")
         print(f"  Batch         {args.batch_size:>7} x {total_devices} = {global_batch_size}")
@@ -316,7 +316,7 @@ def train(args):
         print(f"  Schedule      {warmup_steps}w / {stable_steps}s / {decay_steps}d (WSD)")
         print(f"  Total steps   {total_steps:>12,}")
         print(f"  Epochs        {args.epochs:>12}")
-        print(f"  ─────────────────────────────────────\n")
+        print(f"  -------------------------------------\n")
 
     os.makedirs(args.checkpoint_dir, exist_ok=True)
     global_step = 0
@@ -328,7 +328,7 @@ def train(args):
     eval_model = SimpleAttentionNetwork(config)
 
     last_val_ppl = None
-    # Dummy contrastive arrays — used when contrastive is inactive
+    # Dummy contrastive arrays -- used when contrastive is inactive
     dummy_cl_tokens = jnp.zeros((num_devices, args.batch_size, 128), dtype=jnp.int32)
     dummy_cl_rng = jax.random.split(jax.random.PRNGKey(0), num_devices)
 
@@ -461,10 +461,10 @@ def train(args):
         final_loss = text_losses[-1] if text_losses else float("nan")
         final_ppl = math.exp(min(final_loss, 20)) if not math.isnan(final_loss) else float("nan")
 
-        # ── All hosts: unreplicate params for eval ──
+        # -- All hosts: unreplicate params for eval --
         eval_params = _unreplicate(state).params
 
-        # ── Host 0 only: val PPL + checkpoint save (fast) ──
+        # -- Host 0 only: val PPL + checkpoint save (fast) --
         quant_val_ppl = 0.0
         total_params = 0
         ckpt_path = ""
@@ -505,7 +505,7 @@ def train(args):
                 pickle.dump({"params": params_np, "config": config.__dict__}, f)
             del params_np
 
-        # ── All hosts: distributed generation eval ──
+        # -- All hosts: distributed generation eval --
         from ..model.run import generate_batch
         import json as _json_mod
 
@@ -581,7 +581,7 @@ def train(args):
         _gen_model = eval_model
         _gen_label = f"full {_PRECISION.upper()}"
 
-        # Split eval examples across hosts — each host generates its slice
+        # Split eval examples across hosts -- each host generates its slice
         total_eval = len(all_eval_examples)
         per_host_eval = (total_eval + num_hosts - 1) // num_hosts
         my_eval_start = host_id * per_host_eval
@@ -628,7 +628,7 @@ def train(args):
         _gen_total_toks = sum(len(tokenizer.encode(p)) for p in all_preds)
         _gen_tok_per_sec = _gen_total_toks / max(_gen_elapsed, 1e-6)
 
-        # ── Non-main hosts: done with this epoch ──
+        # -- Non-main hosts: done with this epoch --
         if not is_main:
             jax.experimental.multihost_utils.sync_global_devices("epoch_eval")
             continue
@@ -826,7 +826,7 @@ def train(args):
             best_ckpt_path = os.path.join(args.checkpoint_dir, f"{experiment_name}_{args.num_layers}_{args.d_model}_best.pkl")
             import shutil as _shutil
             _shutil.copy2(ckpt_path, best_ckpt_path)
-            print(f"  ** New best single call_f1={best_call_f1:.1%} → {best_ckpt_path}")
+            print(f"  ** New best single call_f1={best_call_f1:.1%} -> {best_ckpt_path}")
             _upload_checkpoint(best_ckpt_path)
 
         retrieval_metrics = None
@@ -840,9 +840,9 @@ def train(args):
 
         del eval_params
 
-        print(f"\n  ─────────────────────────────────────")
+        print(f"\n  -------------------------------------")
         print(f"  Epoch {epoch + 1}/{args.epochs}")
-        print(f"  ─────────────────────────────────────")
+        print(f"  -------------------------------------")
         print(f"  Text loss      {final_loss:>12.4f}")
         print(f"  Text val ppl   {last_val_ppl:>12.2f}")
         print(f"  Quant val ppl  {quant_val_ppl:>12.2f}  ({_PRECISION.upper()})")
@@ -850,7 +850,7 @@ def train(args):
             if not metrics:
                 return
             n = metrics["n"]
-            print(f"  ─── {label} ({n} samples) ──")
+            print(f"  --- {label} ({n} samples) --")
             print(f"  JSON parse     {metrics['parse_rate']:>10.1%}")
             print(f"  Name F1        {metrics['name_f1']:>10.1%}")
             print(f"  Param haluc    {metrics['param_haluc']:>10.1%}")
@@ -876,7 +876,7 @@ def train(args):
                     pr_ = 1.0 - d["parse_err"] / d["n"]
                     print(f"  {t:>6}  {d['n']:>4}  {nf1:>7.1%}  {d['name_tp']:>4} {d['name_fp']:>4} {d['name_fn']:>4}  {cf1:>7.1%}  {d['call_tp']:>4} {d['call_fp']:>4} {d['call_fn']:>4}  {ex_:>5.1%}  {pr_:>5.1%}")
             if metrics.get("failures"):
-                print(f"  ─── Failures ({len(metrics['failures'])} captured) ───")
+                print(f"  --- Failures ({len(metrics['failures'])} captured) ---")
                 for j, fail in enumerate(metrics["failures"][:10]):
                     print(f"  [{j+1}] Q: {fail['query'][:120]}")
                     print(f"      Ref:  {fail['ref'][:200]}")
@@ -892,14 +892,14 @@ def train(args):
             _print_tc_metrics(_label_map[name], pool_metrics[name], pool_pc[name])
         if retrieval_metrics and retrieval_metrics["num_queries"] > 0:
             rm = retrieval_metrics
-            print(f"  ─── Retrieval ({rm['num_queries']} queries) ─────")
+            print(f"  --- Retrieval ({rm['num_queries']} queries) -----")
             for k, v in sorted(rm["recall@k"].items()):
                 print(f"  Recall@{k:<3}     {v:>10.1%}")
             print(f"  MRR            {rm['mrr']:>10.3f}")
-        print(f"  ─────────────────────────────────────")
+        print(f"  -------------------------------------")
         print(f"  Throughput     {_gen_tok_per_sec:>10.1f} tok/s  ({len(all_eval_examples)} samples, {_gen_elapsed:.1f}s, {_gen_label})")
         if unified_samples:
-            print(f"  ─── Samples ({len(unified_samples)}) ───────────────────")
+            print(f"  --- Samples ({len(unified_samples)}) -------------------")
             for j, s in enumerate(unified_samples):
                 print(f"  [{j+1}] Query: {s['query'][:120]}")
                 tools_short = s["tools"][:120]
@@ -910,9 +910,9 @@ def train(args):
                 print(f"      Text:  {s['text'][:200] or '(empty)'}")
                 if j < len(unified_samples) - 1:
                     print()
-        print(f"  ─────────────────────────────────────")
+        print(f"  -------------------------------------")
         print(f"  Checkpoint: {ckpt_path}")
-        print(f"  ─────────────────────────────────────\n")
+        print(f"  -------------------------------------\n")
 
         if use_wandb:
             log_dict = {

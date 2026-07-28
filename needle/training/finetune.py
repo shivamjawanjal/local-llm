@@ -245,11 +245,11 @@ def finetune_local(args):
     low_tools = {t: c for t, c in tool_counts.items() if c < 120}
     if low_tools:
         print(
-            f"\n⚠  WARNING: The following tools have fewer than 120 examples "
+            f"\n[WARNING] The following tools have fewer than 120 examples "
             f"(need at least 120 per tool: 100 train / 10 val / 10 test):"
         )
         for tool, count in sorted(low_tools.items()):
-            print(f"   • {tool}: {count}")
+            print(f"   - {tool}: {count}")
         print(
             f"   Finetuning with too few examples will overfit (perfect training "
             f"metrics but poor real-world performance). Add more diverse examples.\n"
@@ -279,7 +279,7 @@ def finetune_local(args):
         train_examples = all_avail[n_test + n_val:]
 
     if len(train_examples) == 0:
-        raise ValueError("Not enough data — need at least 3 examples per tool for train/val/test splits")
+        raise ValueError("Not enough data -- need at least 3 examples per tool for train/val/test splits")
 
     print(f"Split: {len(train_examples)} train / {len(val_examples)} val / {len(test_examples)} test (per-tool)")
 
