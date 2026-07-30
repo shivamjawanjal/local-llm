@@ -1,0 +1,1682 @@
+[
+  {
+    "id": "apt_q_01",
+    "question": "A train travels 120 km in 2 hours. What is its average speed?",
+    "category": "Quantitative",
+    "difficulty": "easy",
+    "options": [
+      "50 km/h",
+      "60 km/h",
+      "70 km/h",
+      "80 km/h"
+    ],
+    "answer": "B",
+    "explanation": "Average speed = Distance / Time = 120 km / 2 hours = 60 km/h.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_02",
+    "question": "If a shirt costing $20 is sold for $25, what is the profit percentage?",
+    "category": "Quantitative",
+    "difficulty": "easy",
+    "options": [
+      "10%",
+      "20%",
+      "25%",
+      "30%"
+    ],
+    "answer": "C",
+    "explanation": "Profit = $25 - $20 = $5. Profit % = (5 / 20) * 100 = 25%.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_03",
+    "question": "A can complete a work in 12 days and B can do it in 24 days. How many days will they take to complete it working together?",
+    "category": "Quantitative",
+    "difficulty": "medium",
+    "options": [
+      "6 days",
+      "8 days",
+      "10 days",
+      "12 days"
+    ],
+    "answer": "B",
+    "explanation": "Together rate = 1/12 + 1/24 = 3/24 = 1/8. So, 8 days.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_04",
+    "question": "If 15% of a number is 45, what is 40% of that number?",
+    "category": "Quantitative",
+    "difficulty": "medium",
+    "options": [
+      "100",
+      "120",
+      "150",
+      "180"
+    ],
+    "answer": "B",
+    "explanation": "Number = 45 / 0.15 = 300. 40% of 300 = 0.40 * 300 = 120.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_05",
+    "question": "What is the average of the first five prime numbers?",
+    "category": "Quantitative",
+    "difficulty": "easy",
+    "options": [
+      "5.0",
+      "5.6",
+      "6.2",
+      "7.0"
+    ],
+    "answer": "B",
+    "explanation": "First 5 primes: 2, 3, 5, 7, 11. Sum = 28. Average = 28 / 5 = 5.6.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_06",
+    "question": "A sum of money doubles itself in 8 years at simple interest. What is the annual rate of interest?",
+    "category": "Quantitative",
+    "difficulty": "medium",
+    "options": [
+      "10%",
+      "12.5%",
+      "15%",
+      "20%"
+    ],
+    "answer": "B",
+    "explanation": "Let Principal = P. Amount = 2P, so SI = P. P = (P * R * 8)/100 => R = 100/8 = 12.5%.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_07",
+    "question": "In how many different ways can the letters of the word 'LEADER' be arranged?",
+    "category": "Quantitative",
+    "difficulty": "hard",
+    "options": [
+      "720",
+      "360",
+      "120",
+      "48"
+    ],
+    "answer": "B",
+    "explanation": "Total letters = 6. E is repeated twice. Ways = 6! / 2! = 720 / 2 = 360.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_08",
+    "question": "Two cards are drawn together from a pack of 52 cards. What is the probability that one is a spade and one is a heart?",
+    "category": "Quantitative",
+    "difficulty": "medium",
+    "options": [
+      "13/51",
+      "13/102",
+      "26/51",
+      "1/4"
+    ],
+    "answer": "A",
+    "explanation": "Probability = (13C1 * 13C1) / 52C2 = (13 * 13) / (26 * 51) = 13/51.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_09",
+    "question": "Find the ratio of 90 cm to 1.5 m.",
+    "category": "Quantitative",
+    "difficulty": "easy",
+    "options": [
+      "3:5",
+      "5:3",
+      "3:4",
+      "4:3"
+    ],
+    "answer": "A",
+    "explanation": "1.5 m = 150 cm. Ratio = 90 : 150 = 3 : 5.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_10",
+    "question": "The difference between simple and compound interest on $2000 for 2 years at 10% per annum is:",
+    "category": "Quantitative",
+    "difficulty": "medium",
+    "options": [
+      "$10",
+      "$20",
+      "$40",
+      "$50"
+    ],
+    "answer": "B",
+    "explanation": "Difference = P * (R/100)^2 = 2000 * (10/100)^2 = 2000 * 0.01 = $20.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_11",
+    "question": "A cylinder has a radius of 7 cm and a height of 10 cm. What is its volume? (Use pi = 22/7)",
+    "category": "Quantitative",
+    "difficulty": "medium",
+    "options": [
+      "154 cm3",
+      "1540 cm3",
+      "770 cm3",
+      "3080 cm3"
+    ],
+    "answer": "B",
+    "explanation": "Volume = pi * r^2 * h = (22/7) * 7 * 7 * 10 = 1540 cm3.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_12",
+    "question": "If 12 men or 18 women can build a wall in 14 days, in how many days can 8 men and 16 women build it?",
+    "category": "Quantitative",
+    "difficulty": "medium",
+    "options": [
+      "7 days",
+      "9 days",
+      "10 days",
+      "12 days"
+    ],
+    "answer": "B",
+    "explanation": "12 Men = 18 Women => 1 Man = 1.5 Women. 8 Men + 16 Women = 8*1.5 + 16 = 28 Women. If 18 Women do it in 14 days, 28 Women do it in (18*14)/28 = 9 days.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_13",
+    "question": "A speed of 54 km/h is equal to how many meters per second?",
+    "category": "Quantitative",
+    "difficulty": "easy",
+    "options": [
+      "10 m/s",
+      "15 m/s",
+      "20 m/s",
+      "25 m/s"
+    ],
+    "answer": "B",
+    "explanation": "Speed in m/s = 54 * (5/18) = 15 m/s.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_14",
+    "question": "A bag contains 6 black and 8 white balls. One ball is drawn at random. What is the probability that the ball drawn is white?",
+    "category": "Quantitative",
+    "difficulty": "hard",
+    "options": [
+      "3/7",
+      "4/7",
+      "1/8",
+      "1/14"
+    ],
+    "answer": "B",
+    "explanation": "Total balls = 14. White balls = 8. Probability = 8/14 = 4/7.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_15",
+    "question": "By selling a book for $115, a retailer gains 15%. What was the cost price of the book?",
+    "category": "Quantitative",
+    "difficulty": "easy",
+    "options": [
+      "$90",
+      "$100",
+      "$110",
+      "$120"
+    ],
+    "answer": "B",
+    "explanation": "Cost Price = Selling Price / (1 + Profit Rate) = 115 / 1.15 = $100.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_16",
+    "question": "If log 2 = 0.3010 and log 3 = 0.4771, what is the value of log 5?",
+    "category": "Quantitative",
+    "difficulty": "medium",
+    "options": [
+      "0.3210",
+      "0.6990",
+      "0.7781",
+      "0.8451"
+    ],
+    "answer": "B",
+    "explanation": "log 5 = log(10/2) = log 10 - log 2 = 1 - 0.3010 = 0.6990.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_17",
+    "question": "Three unbiased coins are tossed. What is the probability of getting at least 2 heads?",
+    "category": "Quantitative",
+    "difficulty": "hard",
+    "options": [
+      "1/4",
+      "3/8",
+      "1/2",
+      "5/8"
+    ],
+    "answer": "C",
+    "explanation": "Total outcomes = 8. At least 2 heads: HHH, HHT, HTH, THH (4 outcomes). Probability = 4/8 = 1/2.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_18",
+    "question": "Calculate the sum: 1 + 2 + 3 + ... + 50.",
+    "category": "Quantitative",
+    "difficulty": "easy",
+    "options": [
+      "1225",
+      "1275",
+      "1300",
+      "1350"
+    ],
+    "answer": "B",
+    "explanation": "Sum = n*(n+1)/2 = 50*51/2 = 1275.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_19",
+    "question": "A student has to secure 40% marks to pass. He gets 178 marks and fails by 22 marks. What are the maximum marks?",
+    "category": "Quantitative",
+    "difficulty": "medium",
+    "options": [
+      "400",
+      "500",
+      "600",
+      "700"
+    ],
+    "answer": "B",
+    "explanation": "Passing marks = 178 + 22 = 200. If 40% = 200, then Max Marks = 200 / 0.4 = 500.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_20",
+    "question": "Find the compound interest on $10,000 for 1 year at 20% per annum, compounded half-yearly.",
+    "category": "Quantitative",
+    "difficulty": "hard",
+    "options": [
+      "$2000",
+      "$2100",
+      "$2200",
+      "$2400"
+    ],
+    "answer": "B",
+    "explanation": "For half-yearly, periods (n) = 2, rate (R) = 10%. Amount = 10000 * (1.1)^2 = $12100. CI = 12100 - 10000 = $2100.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_21",
+    "question": "What is the value of (256)^0.16 * (256)^0.09?",
+    "category": "Quantitative",
+    "difficulty": "easy",
+    "options": [
+      "2",
+      "4",
+      "16",
+      "64"
+    ],
+    "answer": "B",
+    "explanation": "(256)^(0.16 + 0.09) = (256)^0.25 = (256)^(1/4) = 4.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_22",
+    "question": "A boat can travel with a speed of 13 km/h in still water. If the speed of the stream is 4 km/h, find the time taken by the boat to go 68 km downstream.",
+    "category": "Quantitative",
+    "difficulty": "medium",
+    "options": [
+      "3 hours",
+      "4 hours",
+      "5 hours",
+      "6 hours"
+    ],
+    "answer": "B",
+    "explanation": "Downstream speed = 13 + 4 = 17 km/h. Time = 68 / 17 = 4 hours.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_23",
+    "question": "The ages of two persons A and B are in the ratio 5:7. Eighteen years ago their ages were in the ratio 8:13. Find their present ages.",
+    "category": "Quantitative",
+    "difficulty": "hard",
+    "options": [
+      "30 and 42 years",
+      "40 and 56 years",
+      "50 and 70 years",
+      "60 and 84 years"
+    ],
+    "answer": "C",
+    "explanation": "Let ages be 5x and 7x. (5x-18)/(7x-18) = 8/13 => 65x - 234 = 56x - 144 => 9x = 90 => x = 10. Ages are 50 and 70.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_24",
+    "question": "A shopkeeper bought a cycle for $1200 and sold it for $1500. Find his gain percentage.",
+    "category": "Quantitative",
+    "difficulty": "easy",
+    "options": [
+      "15%",
+      "20%",
+      "25%",
+      "30%"
+    ],
+    "answer": "C",
+    "explanation": "Profit = $300. Profit % = (300/1200) * 100 = 25%.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_25",
+    "question": "In a mixture of 60 liters, the ratio of milk and water is 2:1. If this ratio is to be 1:2, then the quantity of water to be further added is:",
+    "category": "Quantitative",
+    "difficulty": "medium",
+    "options": [
+      "20 liters",
+      "30 liters",
+      "40 liters",
+      "60 liters"
+    ],
+    "answer": "D",
+    "explanation": "Initial: Milk = 40L, Water = 20L. To make ratio 1:2, water must become 80L. Water to add = 80 - 20 = 60 liters.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_26",
+    "question": "Find the next shape in the pattern:\n[ \u25a1 ]\n[ \u25b3 ]\n[ \u25cb ]\n[ ? ]",
+    "category": "Logical",
+    "difficulty": "easy",
+    "options": [
+      "[ \u2606 ]",
+      "[ \u25bd ]",
+      "[ \u25a1 ]",
+      "[ \u2b21 ]"
+    ],
+    "answer": "C",
+    "explanation": "The pattern cycles back to the first shape (square) to restart the sequence.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_27",
+    "question": "Find the next number in the series: 2, 4, 8, 16, ?",
+    "category": "Logical",
+    "difficulty": "easy",
+    "options": [
+      "24",
+      "30",
+      "32",
+      "36"
+    ],
+    "answer": "C",
+    "explanation": "Pattern doubles each time: 2*2=4, 4*2=8, 8*2=16, 16*2=32.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_28",
+    "question": "If in a certain language, CHARCOAL is coded as 45162913, how is COAL coded?",
+    "category": "Logical",
+    "difficulty": "medium",
+    "options": [
+      "4913",
+      "4213",
+      "4513",
+      "4613"
+    ],
+    "answer": "B",
+    "explanation": "Mapping: C=4, H=5, A=1, R=6, C=2, O=9, A=1, L=3. Wait, CHARCOAL has C=4 and C=2? Actually CHARCOAL is 45162318 or similar. Let's look at the mapping: C=4, O=2, A=1, L=3. Thus COAL = 4213.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_29",
+    "question": "Pointing to a photograph, a man said, 'I have no brother or sister but that man's father is my father's son.' Whose photograph was it?",
+    "category": "Logical",
+    "difficulty": "medium",
+    "options": [
+      "His nephew's",
+      "His son's",
+      "His father's",
+      "His own"
+    ],
+    "answer": "B",
+    "explanation": "'My father's son' with no brothers/sisters means 'Myself'. So, the man's father is 'Myself', meaning the photo is of his son.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_30",
+    "question": "A man walks 5 km East, then turns right and walks 4 km, then turns left and walks 5 km. Which direction is he facing now?",
+    "category": "Logical",
+    "difficulty": "easy",
+    "options": [
+      "North",
+      "South",
+      "East",
+      "West"
+    ],
+    "answer": "C",
+    "explanation": "Starting East -> turns right (facing South) -> turns left (facing East). He is facing East.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_31",
+    "question": "Six friends A, B, C, D, E, and F are sitting in a circle facing the center. F is to the immediate left of A. B is opposite to E. C is opposite to D. Who is sitting to the immediate right of E?",
+    "category": "Logical",
+    "difficulty": "hard",
+    "options": [
+      "A",
+      "B",
+      "F",
+      "Cannot be determined"
+    ],
+    "answer": "D",
+    "explanation": "Since E, B, C, D are opposite each other, their exact seats are E opposite B, C opposite D. This leaves two seats for A and F, with F to the immediate left of A. We don't have enough constraints to place E relative to them, so it cannot be determined.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_32",
+    "question": "Identify the missing element in the sequence: A1, C3, E5, G7, ?",
+    "category": "Logical",
+    "difficulty": "medium",
+    "options": [
+      "H8",
+      "I9",
+      "J10",
+      "I11"
+    ],
+    "answer": "B",
+    "explanation": "Alternate letters (A, C, E, G, I) and their alphabetical positions (1, 3, 5, 7, 9). So, I9.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_33",
+    "question": "In a certain code, 'TIGER' is written as 'SUHJFHDFQS'. How is 'CAT' written?",
+    "category": "Logical",
+    "difficulty": "easy",
+    "options": [
+      "BDZBSU",
+      "BDFHJL",
+      "BDBZSU",
+      "BDBZQS"
+    ],
+    "answer": "C",
+    "explanation": "Each letter is replaced by its preceding and succeeding letter. C -> BD, A -> BZ, T -> SU. CAT -> BDBZSU.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_34",
+    "question": "Find the odd one out: 27, 64, 125, 144, 216",
+    "category": "Logical",
+    "difficulty": "medium",
+    "options": [
+      "64",
+      "125",
+      "144",
+      "216"
+    ],
+    "answer": "C",
+    "explanation": "27 (3^3), 64 (4^3), 125 (5^3), 216 (6^3) are cubes. 144 (12^2) is a square.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_35",
+    "question": "If A + B means A is the brother of B; A - B means A is the sister of B; and A * B means A is the father of B. Which of the following means P is the nephew of Q?",
+    "category": "Logical",
+    "difficulty": "medium",
+    "options": [
+      "Q - R + P",
+      "Q - R * P",
+      "P - R * Q",
+      "Cannot be determined"
+    ],
+    "answer": "D",
+    "explanation": "None of the choices specify P's gender or correct relationship structure to define P as a nephew of Q. Thus, Cannot be determined.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_36",
+    "question": "Find the next figure in the pattern:\n\u25ef \u25ef\u25ef \u25ef\u25ef\u25ef\n\u25b3 \u25b3\u25b3 \u25b3\u25b3\u25b3\n\u25a1 \u25a1\u25a1 [ ? ]",
+    "category": "Logical",
+    "difficulty": "medium",
+    "options": [
+      "\u25a1\u25a1\u25a1\u25a1",
+      "\u25a1\u25a1\u25a1",
+      "\u25ef",
+      "\u25b3"
+    ],
+    "answer": "B",
+    "explanation": "Each row increases the shape count by 1. Row 3 has 1 square, 2 squares, so the third element is 3 squares (\u25a1\u25a1\u25a1).",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_37",
+    "question": "Which of the following diagrams correctly represents the relationship among: Writers, Researchers, and Teachers?",
+    "category": "Logical",
+    "difficulty": "hard",
+    "options": [
+      "Three intersecting circles representing partial overlap",
+      "Three nested circles",
+      "Two separate circles inside a larger one",
+      "Three completely separated circles"
+    ],
+    "answer": "A",
+    "explanation": "A person can be a writer, researcher, and teacher simultaneously, or any combination of the two. This is best represented by three intersecting circles.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_38",
+    "question": "If 'Blue' is called 'Green', 'Green' is called 'White', 'White' is called 'Black', 'Black' is called 'Red', and 'Red' is called 'Yellow', what is the color of milk?",
+    "category": "Logical",
+    "difficulty": "medium",
+    "options": [
+      "White",
+      "Green",
+      "Black",
+      "Red"
+    ],
+    "answer": "C",
+    "explanation": "Milk is white, and 'White' is called 'Black', so the answer is Black.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_39",
+    "question": "Find the missing number in the sequence: 3, 5, 9, 17, ?",
+    "category": "Logical",
+    "difficulty": "easy",
+    "options": [
+      "25",
+      "29",
+      "31",
+      "33"
+    ],
+    "answer": "D",
+    "explanation": "Difference doubles: +2, +4, +8, so next is +16. 17 + 16 = 33.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_40",
+    "question": "Statements:\n1. All mangoes are golden.\n2. No golden things are cheap.\nConclusions:\nI. All mangoes are cheap.\nII. Golden things are cheap.",
+    "category": "Logical",
+    "difficulty": "medium",
+    "options": [
+      "Only I follows",
+      "Only II follows",
+      "Neither I nor II follows",
+      "Both I and II follow"
+    ],
+    "answer": "C",
+    "explanation": "Since all mangoes are golden and no golden is cheap, mangoes are not cheap. Conclusions I and II are false.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_41",
+    "question": "Select the correct mirror image of the word 'EASY' when the mirror is placed to its right.",
+    "category": "Logical",
+    "difficulty": "hard",
+    "options": [
+      "YSAE (reversed letters)",
+      "YS AE",
+      "EASY",
+      "None of these"
+    ],
+    "answer": "A",
+    "explanation": "A mirror to the right reverses the order and flips the letters horizontally: Y, S, A, E all reversed, starting with Y.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_42",
+    "question": "Complete the analogy: Eye : Wink :: Heart : ?",
+    "category": "Logical",
+    "difficulty": "easy",
+    "options": [
+      "Throb",
+      "Pump",
+      "Blood",
+      "Beat"
+    ],
+    "answer": "D",
+    "explanation": "Wink is a fast action of the eye; beat/throb is the action of the heart. Beat is the primary match.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_43",
+    "question": "Find the next element: Z, X, V, T, R, ?",
+    "category": "Logical",
+    "difficulty": "medium",
+    "options": [
+      "P",
+      "Q",
+      "O",
+      "N"
+    ],
+    "answer": "A",
+    "explanation": "Step backward by 2 letters: Z -> X -> V -> T -> R -> P.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_44",
+    "question": "A clock shows 3:00. If the minute hand points North-East, in which direction does the hour hand point?",
+    "category": "Logical",
+    "difficulty": "hard",
+    "options": [
+      "South-East",
+      "South-West",
+      "North-West",
+      "East"
+    ],
+    "answer": "A",
+    "explanation": "At 3:00, minute hand is at 12 (pointing N-E) and hour hand is at 3 (90 degrees clockwise). 90 degrees clockwise from North-East is South-East.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_45",
+    "question": "If 1st January of a non-leap year is Sunday, what day will it be on 31st December of the same year?",
+    "category": "Logical",
+    "difficulty": "easy",
+    "options": [
+      "Sunday",
+      "Monday",
+      "Saturday",
+      "Friday"
+    ],
+    "answer": "A",
+    "explanation": "An ordinary year starts and ends on the same day of the week.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_46",
+    "question": "What is the missing number in the matrix?\n\u250c\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2510\n\u2502 2 \u2502 4 \u2502 8 \u2502\n\u251c\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2524\n\u2502 3 \u2502 9 \u250227 \u2502\n\u251c\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2524\n\u2502 4 \u250216 \u2502 ? \u2502\n\u2514\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2518",
+    "category": "Logical",
+    "difficulty": "medium",
+    "options": [
+      "32",
+      "48",
+      "64",
+      "80"
+    ],
+    "answer": "C",
+    "explanation": "Row pattern: x, x^2, x^3. Row 3 is 4, 16, 4^3 = 64.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_47",
+    "question": "Identify the missing shape:\n[ \u25cb ] -> [ \u25ef \u25ef ]\n[ \u25b3 ] -> [ \u25b3 \u25b3 ]\n[ \u25a1 ] -> [  ?  ]",
+    "category": "Logical",
+    "difficulty": "hard",
+    "options": [
+      "[ \u25a1 \u25a1 ]",
+      "[ \u25a1 ]",
+      "[ \u2b21 ]",
+      "[ \u25ef ]"
+    ],
+    "answer": "A",
+    "explanation": "The operator doubles the shape horizontally.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_48",
+    "question": "Find the odd word out: Apple, Orange, Banana, Potato",
+    "category": "Logical",
+    "difficulty": "easy",
+    "options": [
+      "Apple",
+      "Orange",
+      "Banana",
+      "Potato"
+    ],
+    "answer": "D",
+    "explanation": "Apple, Orange, and Banana are fruits. Potato is a tuber/vegetable.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_49",
+    "question": "If 'A' is substituted by 2, 'B' by 4, 'C' by 6 and so on, what will be the total value of the word 'CAB'?",
+    "category": "Logical",
+    "difficulty": "medium",
+    "options": [
+      "10",
+      "12",
+      "14",
+      "16"
+    ],
+    "answer": "B",
+    "explanation": "C = 3*2 = 6. A = 1*2 = 2. B = 2*2 = 4. Sum = 6 + 2 + 4 = 12.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_50",
+    "question": "Arrange the following words in a meaningful sequence:\n1. Key  2. Door  3. Lock  4. Room  5. Switch on",
+    "category": "Logical",
+    "difficulty": "hard",
+    "options": [
+      "1, 3, 2, 4, 5",
+      "5, 1, 2, 4, 3",
+      "1, 2, 3, 5, 4",
+      "1, 3, 2, 5, 4"
+    ],
+    "answer": "A",
+    "explanation": "Logical sequence: Key (1) -> Lock (3) -> Door (2) -> Room (4) -> Switch on (5).",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_51",
+    "question": "Based on the table below, which company had the highest sales in Q2?\n\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2510\n\u2502 Company \u2502 Q1 \u2502 Q2 \u2502\n\u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u2524\n\u2502 Alpha   \u2502 100\u2502 150\u2502\n\u2502 Beta    \u2502 120\u2502 140\u2502\n\u2502 Gamma   \u2502  90\u2502 160\u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2518",
+    "category": "Analytical",
+    "difficulty": "easy",
+    "options": [
+      "Alpha",
+      "Beta",
+      "Gamma",
+      "All equal"
+    ],
+    "answer": "C",
+    "explanation": "Sales in Q2: Alpha (150), Beta (140), Gamma (160). Gamma is highest.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_52",
+    "question": "In a pie chart representing expenses of $2000, rent is 35%. How much money is spent on rent?",
+    "category": "Analytical",
+    "difficulty": "medium",
+    "options": [
+      "$500",
+      "$600",
+      "$700",
+      "$800"
+    ],
+    "answer": "C",
+    "explanation": "Rent = 35% of $2000 = 0.35 * 2000 = $700.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_53",
+    "question": "If the total revenue of a store over 3 months is $3000, $4000, and $5000, what is the percentage growth from month 1 to month 3?",
+    "category": "Analytical",
+    "difficulty": "easy",
+    "options": [
+      "33.3%",
+      "50%",
+      "66.7%",
+      "100%"
+    ],
+    "answer": "C",
+    "explanation": "Growth = (5000 - 3000)/3000 = 2000/3000 = 66.7%.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_54",
+    "question": "Study the diagram:\n[Total Budget]\n  \u251c\u2500 Tech: 40%\n  \u251c\u2500 Marketing: 30%\n  \u2514\u2500 HR: 30%\nIf HR budget is $15,000, what is the Tech budget?",
+    "category": "Analytical",
+    "difficulty": "medium",
+    "options": [
+      "$15,000",
+      "$20,000",
+      "$25,000",
+      "$30,000"
+    ],
+    "answer": "B",
+    "explanation": "30% = $15,000 => Total budget = $50,000. Tech budget = 40% of $50,000 = $20,000.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_55",
+    "question": "A research group has 5 members. If every member shakes hands with every other member exactly once, what is the total number of handshakes?",
+    "category": "Analytical",
+    "difficulty": "hard",
+    "options": [
+      "10",
+      "15",
+      "20",
+      "25"
+    ],
+    "answer": "A",
+    "explanation": "Handshakes = nC2 = 5 * 4 / 2 = 10.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_56",
+    "question": "If Company X's profit ratio (Profit/Expense) is 0.25 and expenses are $80,000, what is their revenue? (Revenue = Expense + Profit)",
+    "category": "Analytical",
+    "difficulty": "medium",
+    "options": [
+      "$80,000",
+      "$100,000",
+      "$120,000",
+      "$140,000"
+    ],
+    "answer": "B",
+    "explanation": "Profit = 0.25 * 80000 = $20000. Revenue = 80000 + 20000 = $100,000.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_57",
+    "question": "Based on the table, what is the average score of Student B?\n\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u252c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\u2502 Student \u2502 Math   \u2502 Science \u2502\n\u251c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u253c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2524\n\u2502 A       \u2502  80    \u2502   90    \u2502\n\u2502 B       \u2502  70    \u2502   80    \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2534\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518",
+    "category": "Analytical",
+    "difficulty": "easy",
+    "options": [
+      "70",
+      "75",
+      "80",
+      "85"
+    ],
+    "answer": "B",
+    "explanation": "Average of Student B = (70 + 80) / 2 = 75.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_58",
+    "question": "A production line produces 240 units per hour. If the error rate is 2.5%, how many defective units are produced in an 8-hour shift?",
+    "category": "Analytical",
+    "difficulty": "medium",
+    "options": [
+      "24",
+      "36",
+      "48",
+      "60"
+    ],
+    "answer": "C",
+    "explanation": "Total produced = 240 * 8 = 1920. Defective = 1920 * 0.025 = 48.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_59",
+    "question": "If 3 painters can paint 3 houses in 3 days, how many days does it take 1 painter to paint 1 house?",
+    "category": "Analytical",
+    "difficulty": "hard",
+    "options": [
+      "1 day",
+      "3 days",
+      "9 days",
+      "None of these"
+    ],
+    "answer": "B",
+    "explanation": "Rate of work: 3 painters paint 3 houses in 3 days => 1 painter paints 1 house in 3 days.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_60",
+    "question": "In a group of 50 people, 35 speak English, 20 speak French, and 10 speak both. How many speak neither language?",
+    "category": "Analytical",
+    "difficulty": "easy",
+    "options": [
+      "5",
+      "10",
+      "15",
+      "20"
+    ],
+    "answer": "A",
+    "explanation": "Speak English or French = 35 + 20 - 10 = 45. Neither = 50 - 45 = 5.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_61",
+    "question": "A train passes a station platform 100 meters long in 10 seconds, and passes a pole in 6 seconds. What is the length of the train?",
+    "category": "Analytical",
+    "difficulty": "medium",
+    "options": [
+      "100 m",
+      "150 m",
+      "200 m",
+      "250 m"
+    ],
+    "answer": "B",
+    "explanation": "Let train length = L. Speed = L/6. Platform formula: Speed = (L+100)/10. L/6 = (L+100)/10 => 10L = 6L + 600 => 4L = 600 => L = 150m.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_62",
+    "question": "From a container of 80 liters of milk, 8 liters is replaced by water. This process is repeated one more time. How much milk remains?",
+    "category": "Analytical",
+    "difficulty": "hard",
+    "options": [
+      "64 liters",
+      "64.8 liters",
+      "72 liters",
+      "68.4 liters"
+    ],
+    "answer": "B",
+    "explanation": "Milk left = 80 * (1 - 8/80)^2 = 80 * (0.9)^2 = 80 * 0.81 = 64.8 liters.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_63",
+    "question": "If 4 workers can pack 40 boxes in 2 hours, what is the packing rate per worker per hour?",
+    "category": "Analytical",
+    "difficulty": "easy",
+    "options": [
+      "2 boxes/hr",
+      "5 boxes/hr",
+      "10 boxes/hr",
+      "20 boxes/hr"
+    ],
+    "answer": "B",
+    "explanation": "Total worker-hours = 4 * 2 = 8. Packing rate = 40 boxes / 8 worker-hours = 5 boxes/hour.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_64",
+    "question": "If the price of petroleum increases by 25%, by how much percent must a driver reduce consumption to keep expenditure constant?",
+    "category": "Analytical",
+    "difficulty": "medium",
+    "options": [
+      "15%",
+      "20%",
+      "25%",
+      "30%"
+    ],
+    "answer": "B",
+    "explanation": "Reduction % = [R / (100 + R)] * 100 = (25 / 125) * 100 = 20%.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_65",
+    "question": "A family has two children. Given that at least one of them is a boy, what is the probability that both are boys?",
+    "category": "Analytical",
+    "difficulty": "hard",
+    "options": [
+      "1/3",
+      "1/2",
+      "2/3",
+      "3/4"
+    ],
+    "answer": "A",
+    "explanation": "Sample space: BB, BG, GB (GG excluded since at least one is a boy). Favorable: BB. Probability = 1/3.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_66",
+    "question": "Choose the correct synonym for: 'ABANDON'",
+    "category": "Verbal",
+    "difficulty": "easy",
+    "options": [
+      "Keep",
+      "Leave",
+      "Adopt",
+      "Cherish"
+    ],
+    "answer": "B",
+    "explanation": "To abandon means to desert, leave, or give up.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_67",
+    "question": "Choose the correct antonym for: 'LOQUACIOUS'",
+    "category": "Verbal",
+    "difficulty": "easy",
+    "options": [
+      "Silent",
+      "Talkative",
+      "Friendly",
+      "Beautiful"
+    ],
+    "answer": "A",
+    "explanation": "Loquacious means talkative; the opposite is silent or taciturn.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_68",
+    "question": "Identify the grammatical error in the sentence:\n'Each of the students have completed their assignment.'",
+    "category": "Verbal",
+    "difficulty": "medium",
+    "options": [
+      "Each of the",
+      "students have",
+      "completed",
+      "their assignment"
+    ],
+    "answer": "B",
+    "explanation": "'Each' is singular, so it should be 'has completed' instead of 'have completed'.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_69",
+    "question": "Rearrange the following sentences to make a logical paragraph:\nP: They are key sources of energy.\nQ: Carbohydrates are organic compounds.\nR: They include sugars and starches.",
+    "category": "Verbal",
+    "difficulty": "medium",
+    "options": [
+      "Q, R, P",
+      "P, Q, R",
+      "Q, P, R",
+      "R, P, Q"
+    ],
+    "answer": "A",
+    "explanation": "Logical flow: Define Carbohydrates first (Q) -> Describe what they include (R) -> Explain their role (P). So, Q, R, P.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_70",
+    "question": "Complete the sentence: She is very keen _______ visiting the museum.",
+    "category": "Verbal",
+    "difficulty": "easy",
+    "options": [
+      "on",
+      "at",
+      "for",
+      "with"
+    ],
+    "answer": "A",
+    "explanation": "The preposition 'on' always follows the adjective 'keen' in this context.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_71",
+    "question": "Choose the correct spelling of the word:",
+    "category": "Verbal",
+    "difficulty": "medium",
+    "options": [
+      "Accomodation",
+      "Accommodation",
+      "Acomodation",
+      "Accomodasion"
+    ],
+    "answer": "B",
+    "explanation": "The correct spelling is 'Accommodation' with double 'c' and double 'm'.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_72",
+    "question": "Identify the passive voice version of: 'The chef cooked a delicious dinner.'",
+    "category": "Verbal",
+    "difficulty": "hard",
+    "options": [
+      "A delicious dinner was cooked by the chef.",
+      "A delicious dinner is cooked by the chef.",
+      "Dinner is being cooked by the chef.",
+      "The dinner was cooking by the chef."
+    ],
+    "answer": "A",
+    "explanation": "Subject and Object swap; past tense 'cooked' becomes 'was cooked'.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_73",
+    "question": "What is the meaning of the idiom: 'Spill the beans'?",
+    "category": "Verbal",
+    "difficulty": "medium",
+    "options": [
+      "To drop food",
+      "To reveal a secret",
+      "To perform a task poorly",
+      "To start a fight"
+    ],
+    "answer": "B",
+    "explanation": "The idiom 'spill the beans' means to reveal secret information prematurely.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_74",
+    "question": "Read the text and answer: 'All trees need water. An oak is a tree.' Does the oak need water?",
+    "category": "Verbal",
+    "difficulty": "hard",
+    "options": [
+      "Yes, definitely",
+      "No, it does not",
+      "Cannot be determined",
+      "Only in summer"
+    ],
+    "answer": "A",
+    "explanation": "Using deductive reasoning: Oak is a subset of trees, all trees need water, therefore oak needs water.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_75",
+    "question": "Choose the closest antonym for: 'EPHEMERAL'",
+    "category": "Verbal",
+    "difficulty": "easy",
+    "options": [
+      "Short-lived",
+      "Permanent",
+      "Weak",
+      "Fast"
+    ],
+    "answer": "B",
+    "explanation": "Ephemeral means short-lived; the opposite is permanent or everlasting.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_76",
+    "question": "Complete the sentence: Neither of the answers _______ correct.",
+    "category": "Verbal",
+    "difficulty": "medium",
+    "options": [
+      "is",
+      "are",
+      "were",
+      "been"
+    ],
+    "answer": "A",
+    "explanation": "'Neither' is a singular pronoun and takes a singular verb ('is').",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_77",
+    "question": "Choose the correct idiom meaning for: 'Burn the midnight oil'",
+    "category": "Verbal",
+    "difficulty": "hard",
+    "options": [
+      "To waste fuel",
+      "To study or work late into the night",
+      "To cause an accident",
+      "To sleep early"
+    ],
+    "answer": "B",
+    "explanation": "Burning the midnight oil means working late into the night.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_78",
+    "question": "Fill in the blank: The train ________ before I reached the station.",
+    "category": "Verbal",
+    "difficulty": "easy",
+    "options": [
+      "left",
+      "had left",
+      "was leaving",
+      "leaves"
+    ],
+    "answer": "B",
+    "explanation": "Past perfect tense 'had left' describes an action completed before another past action.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_79",
+    "question": "What is the meaning of: 'PRAGMATIC'?",
+    "category": "Verbal",
+    "difficulty": "medium",
+    "options": [
+      "Idealistic",
+      "Practical",
+      "Stubborn",
+      "Careless"
+    ],
+    "answer": "B",
+    "explanation": "Pragmatic means dealing with things sensibly and realistically in a way that is based on practical rather than theoretical considerations.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  },
+  {
+    "id": "apt_q_80",
+    "question": "Complete the sentence: If I _______ you, I would accept the job offer.",
+    "category": "Verbal",
+    "difficulty": "hard",
+    "options": [
+      "was",
+      "were",
+      "am",
+      "would be"
+    ],
+    "answer": "B",
+    "explanation": "Subjunctive mood uses 'were' for hypothetical or contrary-to-fact conditions.",
+    "timeLimit": 60,
+    "evaluationGuide": [
+      "Explain the core concept or select the correct option directly."
+    ],
+    "role": "APTITUDE",
+    "isActive": true,
+    "version": 1
+  }
+]
