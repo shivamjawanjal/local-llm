@@ -577,17 +577,39 @@
           resultData = await res.json();
           resultData.engineName = '🐍 Local FastAPI Python Server (Port 8000)';
         } else {
-          // Simulate In-Browser Memory Evaluation
-          await new Promise(r => setTimeout(r, 60));
-          const words = a.split(/\s+/).length;
-          let score = words > 15 ? 8 : 4;
-          resultData = {
-            type: score >= 7 ? 'EVALUATED' : 'NEEDS_CLARIFICATION',
-            score: score,
-            feedback: score >= 7 ? 'Demonstrated strong technical grasp of concepts.' : 'Answer was brief. Recommend asking candidate to elaborate.',
-            follow_up_question: score < 7 ? `Could you explain in more detail how ${q.slice(0, 30)} works?` : null,
-            engineName: '⚡ In-Browser Memory Engine (Client WASM)'
-          };
+          // In-Browser Memory Evaluation Engine
+          await new Promise(r => setTimeout(r, 30));
+          const cleanedA = a.trim().toLowerCase();
+          const words = cleanedA.split(/\s+/).filter(Boolean);
+          
+          if (cleanedA.length < 3 || ['idk', 'none', 'pass'].includes(cleanedA)) {
+            resultData = {
+              type: 'UNANSWERED',
+              score: 0,
+              verdict: 'Fail',
+              feedback: 'Candidate provided no substantive answer or single character response.',
+              reason: 'Response too short to evaluate.',
+              engineName: '⚡ In-Browser Memory Engine (Client WASM)'
+            };
+          } else if (words.length <= 3) {
+            resultData = {
+              type: 'NEEDS_CLARIFICATION',
+              score: 2,
+              verdict: 'Very Brief',
+              feedback: `Response is extremely brief (${words.length} words).`,
+              follow_up_question: `Could you explain in full sentences how ${q.slice(0, 30)} works?`,
+              engineName: '⚡ In-Browser Memory Engine (Client WASM)'
+            };
+          } else {
+            resultData = {
+              type: words.length >= 20 ? 'EVALUATED' : 'NEEDS_CLARIFICATION',
+              score: words.length >= 20 ? 8 : 5,
+              verdict: words.length >= 20 ? 'Good' : 'Pass',
+              feedback: words.length >= 20 ? 'Strong response covering key technical principles.' : 'Satisfactory answer, but could elaborate on details.',
+              follow_up_question: words.length < 20 ? `Could you elaborate in more detail on ${q.slice(0, 30)}?` : null,
+              engineName: '⚡ In-Browser Memory Engine (Client WASM)'
+            };
+          }
         }
 
         const endTime = performance.now();
@@ -605,7 +627,7 @@
 
     function renderResults(res, q, a) {
       const container = document.getElementById('outputContainer');
-      const score = res.score || 7;
+      const score = (res.score !== undefined && res.score !== null) ? res.score : 0;
       let verdictClass = 'verdict-good';
       let verdictText = 'Good';
 
