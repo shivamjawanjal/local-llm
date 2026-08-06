@@ -159,11 +159,42 @@
       gap: 0.5rem;
     }
 
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    label {
+      font-size: 0.725rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+    }
+
+    select, input[type="text"] {
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 12px;
+      padding: 0.75rem 1rem;
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 0.875rem;
+      outline: none;
+      transition: all 0.2s ease;
+    }
+
+    select:focus, input[type="text"]:focus {
+      border-color: var(--accent-cyan);
+      box-shadow: 0 0 0 3px rgba(6, 182, 212, 0.2);
+    }
+
     /* CHAT CONTAINER */
     .chat-box {
       flex: 1;
-      min-height: 380px;
-      max-height: 480px;
+      min-height: 320px;
+      max-height: 400px;
       overflow-y: auto;
       display: flex;
       flex-direction: column;
@@ -365,30 +396,6 @@
       overflow-y: auto;
     }
 
-    .sample-buttons {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-    }
-
-    .chip-btn {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid var(--card-border);
-      color: #94A3B8;
-      padding: 0.35rem 0.7rem;
-      border-radius: 8px;
-      font-size: 0.725rem;
-      font-weight: 600;
-      cursor: pointer;
-      transition: all 0.15s ease;
-    }
-
-    .chip-btn:hover {
-      background: rgba(6, 182, 212, 0.15);
-      color: #67E8F9;
-      border-color: rgba(6, 182, 212, 0.3);
-    }
-
     footer {
       text-align: center;
       padding: 1.25rem;
@@ -425,23 +432,50 @@
         <span style="font-size: 0.7rem; color: var(--text-muted);">Multi-Turn Dialogue</span>
       </div>
 
-      <!-- Quick Question Presets -->
-      <div style="display: flex; flex-direction: column; gap: 0.4rem;">
-        <span style="font-size: 0.7rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase;">Topic Samples:</span>
-        <div class="sample-buttons">
-          <button class="chip-btn" onclick="sendPreset(1)">💻 Computer Science</button>
-          <button class="chip-btn" onclick="sendPreset(2)">🤖 AI / ML Core</button>
-          <button class="chip-btn" onclick="sendPreset(3)">🔒 Cyber Security</button>
-          <button class="chip-btn" onclick="sendPreset(4)">⚡ Electronics / ETC</button>
-        </div>
+      <!-- Interactive Question Selector Dropdown -->
+      <div class="form-group">
+        <label>Select Any Interview Question from Question Bank</label>
+        <select id="questionDropdown" onchange="onQuestionSelect(this.value)">
+          <optgroup label="💻 Computer Science & Software Engineering">
+            <option value="What is Dependency Injection in software architecture, and why is it useful?" selected>What is Dependency Injection in software architecture, and why is it useful?</option>
+            <option value="Explain the differences between Interfaces and Abstract Classes in Object Oriented Programming.">Differences between Interfaces and Abstract Classes in OOP?</option>
+            <option value="What is SQL Injection and how can developers prevent it in web applications?">What is SQL Injection and how can developers prevent it?</option>
+            <option value="How does RESTful API architecture differ from GraphQL?">RESTful API architecture vs GraphQL?</option>
+            <option value="Explain Time Complexity and Space Complexity in Data Structures and Algorithms.">Explain Time Complexity and Space Complexity (Big O)?</option>
+          </optgroup>
+          <optgroup label="🤖 Artificial Intelligence & Machine Learning">
+            <option value="Explain the difference between Supervised, Unsupervised, and Reinforcement Learning.">Supervised vs Unsupervised vs Reinforcement Learning?</option>
+            <option value="What is Overfitting in Machine Learning and how do you prevent it using Regularization?">What is Overfitting in ML & how to prevent it?</option>
+            <option value="Explain the Transformer Architecture and the Self-Attention mechanism in LLMs.">Transformer Architecture & Self-Attention in LLMs?</option>
+            <option value="What is Precision, Recall, and F1-Score in model evaluation metrics?">Precision, Recall, and F1-Score evaluation metrics?</option>
+          </optgroup>
+          <optgroup label="📊 Data Science & Analytics">
+            <option value="Explain the difference between Linear Regression and Logistic Regression.">Linear Regression vs Logistic Regression?</option>
+            <option value="What is a P-Value in Statistical Hypothesis Testing?">What is P-Value in Statistical Hypothesis Testing?</option>
+            <option value="How do you handle Missing Data or Imbalanced Datasets in machine learning?">Handling Missing Data or Imbalanced Datasets?</option>
+          </optgroup>
+          <optgroup label="⚡ Electronics & Communications (ETC / EE)">
+            <option value="What is the purpose of an operational amplifier (Op-Amp) in analog circuit design?">Purpose of Operational Amplifier (Op-Amp) in analog circuits?</option>
+            <option value="Explain the difference between Microprocessors and Microcontrollers.">Microprocessors vs Microcontrollers?</option>
+          </optgroup>
+          <optgroup label="✍️ Custom Input">
+            <option value="CUSTOM">-- Enter Any Custom Question --</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <!-- Custom Question Input (Visible when Custom Selected) -->
+      <div class="form-group" id="customGroup" style="display: none;">
+        <label>Type Your Custom Question</label>
+        <input type="text" id="customQuestionInput" placeholder="Type any interview question here..." oninput="onCustomQuestionInput(this.value)">
       </div>
 
       <!-- Chat History Box -->
       <div class="chat-box" id="chatBox">
         <div class="message ai">
           <div class="message-author">🤖 Qwen-2.5 AI Interviewer</div>
-          <div class="message-bubble">
-            Hello! I am your Qwen-2.5 AI Interviewer running 100% inside your browser. Welcome to your technical interview! Let's start: <strong>What is Dependency Injection in software architecture, and why is it useful?</strong>
+          <div class="message-bubble" id="welcomeMsg">
+            Hello! I am your Qwen-2.5 AI Interviewer running 100% inside your browser. Welcome to your technical interview! Let me ask you: <strong id="questionPromptBold">What is Dependency Injection in software architecture, and why is it useful?</strong>
           </div>
         </div>
       </div>
@@ -476,11 +510,11 @@
 
         <div class="info-card">
           <span class="info-label">AI Evaluator Observation</span>
-          <p class="info-val" id="evalFeedback">Qwen-2.5 0.5B initialized. Ready to evaluate your responses in real-time.</p>
+          <p class="info-val" id="evalFeedback">Qwen-2.5 0.5B initialized. Select any question from dropdown and test real-time evaluation.</p>
         </div>
 
         <div class="info-card">
-          <span class="info-label">Current Interview Question</span>
+          <span class="info-label">Active Selected Question</span>
           <p class="info-val" id="currentQuestionText" style="font-weight: 600; color: #67E8F9;">What is Dependency Injection in software architecture, and why is it useful?</p>
         </div>
 
@@ -488,7 +522,8 @@
           [Qwen-2.5 0.5B Direct JSON Schema Output]:<br/>
           {
             "engine": "Qwen-2.5 0.5B Instruct (In-Browser)",
-            "status": "Ready"
+            "status": "Ready",
+            "activeQuestion": "What is Dependency Injection in software architecture, and why is it useful?"
           }
         </div>
       </div>
@@ -502,36 +537,30 @@
   <script>
     let currentQuestion = "What is Dependency Injection in software architecture, and why is it useful?";
 
-    const PRESETS = {
-      1: {
-        q: "What is Dependency Injection in software architecture, and why is it useful?",
-        a: "Dependency Injection is a design pattern where an object receives its dependencies from external sources rather than creating them itself. It decouples class creation from implementation, improving testability and code maintainability."
-      },
-      2: {
-        q: "Explain the difference between Supervised and Unsupervised Machine Learning.",
-        a: "Supervised learning trains models on labeled datasets with target outputs, whereas unsupervised learning analyzes unlabeled data to uncover hidden patterns or groupings independently."
-      },
-      3: {
-        q: "What is SQL Injection and how can developers prevent it?",
-        a: "SQL Injection occurs when malicious SQL statements are inserted into entry fields for execution. It is prevented by using parameterized queries, prepared statements, and ORM frameworks."
-      },
-      4: {
-        q: "What is the purpose of an operational amplifier (Op-Amp) in analog circuits?",
-        a: "An operational amplifier is a high-gain voltage amplifier with differential inputs used for mathematical operations like addition, integration, and filtering in analog systems."
+    function onQuestionSelect(val) {
+      const customGroup = document.getElementById('customGroup');
+      if (val === 'CUSTOM') {
+        customGroup.style.display = 'flex';
+        const customVal = document.getElementById('customQuestionInput').value.trim();
+        if (customVal) {
+          setNewQuestion(customVal);
+        }
+      } else {
+        customGroup.style.display = 'none';
+        setNewQuestion(val);
       }
-    };
+    }
 
-    function sendPreset(id) {
-      if (PRESETS[id]) {
-        currentQuestion = PRESETS[id].q;
-        document.getElementById('currentQuestionText').innerText = currentQuestion;
-        
-        // Add AI message asking new question
-        appendMessage('ai', `Let's move to the next question: <strong>${currentQuestion}</strong>`);
-        
-        // Populate candidate answer
-        document.getElementById('chatInput').value = PRESETS[id].a;
+    function onCustomQuestionInput(val) {
+      if (val.trim()) {
+        setNewQuestion(val.trim());
       }
+    }
+
+    function setNewQuestion(qText) {
+      currentQuestion = qText;
+      document.getElementById('currentQuestionText').innerText = currentQuestion;
+      appendMessage('ai', `Next Question Selected: <strong>${currentQuestion}</strong>`);
     }
 
     function appendMessage(role, text) {
@@ -591,12 +620,10 @@
     }
 
     async function evaluateWithQwen(question, answer) {
-      // Qwen-2.5 0.5B Instruct In-Browser Evaluation Algorithm
       const cleanedA = answer.trim().toLowerCase();
       const cleanedQ = question.trim().toLowerCase();
       const words = cleanedA.split(/\s+/).filter(Boolean);
 
-      // Extract domain keywords from question
       const stopwords = new Set(['what', 'is', 'a', 'an', 'the', 'in', 'of', 'and', 'or', 'to', 'for', 'with', 'on', 'how', 'why', 'can', 'you', 'explain']);
       const qTerms = (cleanedQ.match(/\b[a-z]{3,}\b/g) || []).filter(w => !stopwords.has(w));
       const matchedTerms = qTerms.filter(w => cleanedA.includes(w) || words.some(aW => aW.startsWith(w.slice(0, 4))));
@@ -620,7 +647,7 @@
           type: 'UNANSWERED',
           score: 1,
           verdict: 'Off-Topic',
-          feedback: 'Response is off-topic and does not contain technical concepts related to the question.',
+          feedback: 'Response is off-topic and does not contain technical concepts related to the selected question.',
           follow_up_question: null,
           engine: 'Qwen-2.5 0.5B Instruct (In-Browser)'
         };
